@@ -4,25 +4,25 @@ import styled, { keyframes } from 'react-emotion';
 
 const dance = keyframes`
   0% {
-    color: #32D59E;
-  }
-  25% {
-    color: #D53232;
-  }
-  50% {
-    color: #A132D5;
-  }
-  75% {
     color: #3278D5;
   }
-  100% {
+  25% {
     color: #32D59E;
+  }
+  50% {
+    color: #D53232;
+  }
+  75% {
+    color: #A132D5;
+  }
+  100% {
+    color: #3278D5;
   }
 `;
 
 const LogoContainer = styled.div`
   animation ${dance} 1s step-end;
-  color: #ffff;
+  color: #3278D5;
   text-align: center;
   padding-top: 1rem;
 `;

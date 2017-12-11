@@ -2,17 +2,26 @@ import React from 'react';
 import { Logo } from './components/Logo/index';
 import styled, { keyframes } from 'react-emotion';
 
-const white = keyframes`
+const dance = keyframes`
   0% {
-    background: #fff;
+    background: #32D59E;
+  }
+  25% {
+    background: #D53232;
+  }
+  50% {
+    background: #A132D5;
+  }
+  75% {
+    background: #3278D5;
   }
   100% {
-    background: #fff;
+    background: #32D59E;
   }
-`
+`;
 
 const Background = styled.div`
-  animation: ${white} 1s step-end;
+  animation: ${dance} 1s step-end;
   background: #32d59e;
   min-height: 100vh;
   overflow: auto;
